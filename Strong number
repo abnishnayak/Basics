@@ -1,0 +1,36 @@
+WAP to check whether the number is a strong number.
+
+A strong number is a special number that can be defined as an addition of factorial of each digit of the number, which is equal to the number itself
+ex-145
+sum of factorial of digit=145
+1!+4!+5!=1+24+124=145
+
+comment for any queries
+
+import java.util.Scanner;
+
+public class StrongNo {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a number to check: ");
+		int n=s.nextInt();
+		int m=n,d=0,sum=0;
+		while(n!=0) {
+			d=n%10;
+			int fact=1;
+			for(int i=1;i<=d;i++) {
+				fact*=i;
+			}
+			sum+=fact;
+			n/=10;
+		}
+		if (sum==m) {
+			System.out.println(m+" is a strong number.");
+		} else {
+			System.out.println(m+" is  not a strong number.");
+		}
+		s.close();
+	}
+
+}
