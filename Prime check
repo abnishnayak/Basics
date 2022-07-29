@@ -1,5 +1,9 @@
 WAP to check whether the number is prime or composite.
 
+A prime number is who is divided by 1 or itself. Ex-2,3,5,7,11,13,17,19
+A composite number is who is divided by 3 numbers. Ex-4,6,8,9,10,12,14,15,16,18,20
+1 and 0 is not prime neither composite.
+
 contact for any queries.
 
 import java.util.Scanner;
@@ -8,7 +12,7 @@ public class Prime {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		System.out.println("Enter a number");
+		System.out.println("Enter a number other than 1 and 0");
 		int n=s.nextInt();
 		int count=0;
 		for(int i=1;i<=n; i++) {
