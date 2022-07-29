@@ -1,0 +1,37 @@
+WAP to check the tailing zeroes of factorial.
+
+tailing zero is the 0 that is comes at the end of the number.
+ex-5!=120, tailing zero=1
+10!=3628800, tailing zero=2
+8!=40320, tailing zero=1, doesnot count the middled zeroes
+
+
+comment for any queries
+
+import java.util.Scanner;
+
+public class TalingZeroes {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a number to check tailing zero");
+		int n=s.nextInt();
+		int fact=1;
+		for(int i=1;i<=n;i++) {
+			fact*=i;
+		}
+		int d=0;
+		int count=0;
+		while(fact!=0) {
+			d=fact%10;
+			if(d!=0) {
+				break;
+			}
+			count++;
+			fact/=10;
+		}
+		System.out.println("Tailing zero: "+count);
+		s.close();
+	}
+
+}
