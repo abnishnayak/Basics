@@ -6,8 +6,6 @@ ex-5!=120, tailing zero=1
 8!=40320, tailing zero=1, doesnot count the middled zeroes
 
 
-comment for any queries
-
 import java.util.Scanner;
 
 public class TalingZeroes {
