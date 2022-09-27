@@ -3,7 +3,6 @@ WAP to find factorial.
 This program is done in 'int' datatype. If it exceeds 'int' size than it will provide in negative. For better output you may take 'long' instead of 'int' datatype. 
 16! is the limit.
 
-comment for any queries.
 
 import java.util.Scanner;
 
