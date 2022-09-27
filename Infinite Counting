@@ -1,0 +1,39 @@
+#WAP to count the numbers infinitely and separate them with positive, negative and neutral.
+
+
+import java.util.Scanner;
+
+public class InfiniteCounting {
+
+	public static void main(String[] args) {
+		int positive=0,negative=0,neutral=0;
+		Scanner s=new Scanner(System.in);
+		
+		System.out.println("Enter 1 to continue, 0 to stop: ");
+		int i=s.nextInt();
+		
+		while(i==1) {
+			System.out.println("Enter a integer: ");
+			int number=s.nextInt();
+			if(number>0) {
+				positive++;
+			} else if(number<0) {
+				negative++;
+			}else {
+				neutral++;
+			}
+
+			System.out.println("Positive: "+positive);
+			System.out.println("Negative: "+negative);
+			System.out.println("Neutral: "+neutral);
+			System.out.println("-------------------------");
+			
+			System.out.println("Enter 1 to continue, 0 to stop: ");
+			i=s.nextInt();
+			
+		}
+		System.out.println("Thank you for using this program.");
+		s.close();
+	}
+
+}
