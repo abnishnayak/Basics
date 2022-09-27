@@ -1,6 +1,4 @@
-WAP to check prime number in the provided range
-
-contact for any queries in comment.
+WAP to check prime number in the provided range.
 
 
 import java.util.Scanner;
