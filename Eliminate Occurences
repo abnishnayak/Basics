@@ -30,6 +30,7 @@ public class EliminateOccurence {
 				}
 			}
 		System.out.println(str);
+		System.out.println(str);
 		s.close();
 	}
 
